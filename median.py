@@ -9,4 +9,12 @@ while True:
         print("Some input could not be converted to a number!")
     else:
         break
+numbers.sort()
+if len(numbers) % 2 == 0:
+    midpoint = int(len(numbers) / 2)
+    middle = (numbers[midpoint-1] + numbers[midpoint]) / 2
+else:
+    middle = numbers[len(numbers) // 2]
+
 print(numbers)
+print(middle)
